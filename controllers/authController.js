@@ -31,7 +31,8 @@ async function login(req, res) {
                 data: {
                     message: 'Login successful',
                     token: token,
-                    userId: user._id
+                    userId: user._id,
+                    userName:user.username,
                 }
             }
         );
